@@ -24,9 +24,4 @@ Route::post('login', 'RegisterController@login');
 
 Route::middleware('auth:api')->group( function () {
     Route::apiResource('cars', 'CarController');
-//    Route::get('car', 'CarController@index');
-//    Route::get('car/{id}', 'CarController@show');
-//    Route::post('car', 'CarController@store');
-//    Route::put('car/{id}', 'CarController@update');
-//    Route::delete('car/{id}', 'CarController@destroy');
 });

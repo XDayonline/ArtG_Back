@@ -8,16 +8,18 @@
             <table class="table table-bordered" id="laravel_crud">
                 <thead>
                 <tr>
-                    <th>Id</th>
+                    <th>Modèle</th>
                     <th>Marque</th>
+                    <th>Image</th>
                     <td colspan="2">Action</td>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($cars as $car)
                     <tr>
-                        <td>{{ $car->id }}</td>
+                        <td>{{ $car->name }}</td>
                         <td>{{ $car->marque }}</td>
+                        <td><img height="100px" src="{{ $car->urlimg }}"></td>
                         <td><a href="{{ route('cars.edit',$car->id)}}" class="btn btn-primary">Modifier</a></td>
                         <td>
                             <form action="{{ route('cars.destroy', $car->id)}}" method="post">

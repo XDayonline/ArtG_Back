@@ -43,6 +43,8 @@ class CarController extends Controller
         $input = $request->all();
         $validator = Validator::make($input, [
             'marque' => 'required',
+            'urlimg',
+            'name',
         ]);
         if($validator->fails()){
             return $this->sendError('Validation Error.', $validator->errors());

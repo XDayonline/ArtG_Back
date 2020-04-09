@@ -14,8 +14,10 @@ class CreateCarsTable extends Migration
     public function up()
     {
         Schema::create('cars', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('id')->unique();;
             $table->string('marque');
+            $table->string('urlimg')->nullable();
+            $table->string('name')->nullable();
 //            $table->string('sieges');
 //            $table->string('puissance');
 //            $table->string('annee');

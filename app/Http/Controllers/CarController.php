@@ -92,6 +92,8 @@ class CarController extends Controller
     {
         $car = Car::find($id);
         $car->marque = $request->input('marque');
+        $car->urlimg = $request->input('urlimg');
+        $car->name = $request->input('name');
         $car->save();
 
         return $this->sendResponse(new CarResource($car), 'Car updated successfully.');

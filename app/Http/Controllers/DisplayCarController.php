@@ -17,7 +17,7 @@ class DisplayCarController extends Controller
     {
         $data['cars'] = Car::orderBy('id')->paginate(10);
 
-        return view('cars.list',$data);
+        return view('cars.list', $data);
     }
 
     public function create()
@@ -31,9 +31,11 @@ class DisplayCarController extends Controller
 
         $validator = Validator::make($input, [
             'marque' => 'required',
+            'urlimg',
+            'name',
         ]);
 
-        if($validator->fails()){
+        if ($validator->fails()) {
             return $this->sendError('Validation Error.', $validator->errors());
         }
 
@@ -62,7 +64,9 @@ class DisplayCarController extends Controller
             'marque' => 'required',
         ]);
 
-        $update = ['marque' => $request->marque];
+        $update = ['marque' => $request->marque,
+            'urlimg' => $request->urlimg,
+            'name' => $request->name];
         Car::where('id', $id)->update($update);
 
         return Redirect::to('cars')

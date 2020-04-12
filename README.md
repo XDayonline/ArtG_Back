@@ -3,7 +3,8 @@
 
 <p align="center">
 <a style="justify-content: center" href="https://artgback.herokuapp.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Circle-icons-car.svg/100px-Circle-icons-car.svg.png" title="ArtG" alt="ArtG"></a>
-
+</p>
+<p>
 <a href="https://artgback.herokuapp.com/"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
 <a href="https://artgback.herokuapp.com/"><img src="https://img.shields.io/badge/stable-v1-blue" alt="Latest Stable Version"></a>
 <a href="https://artgback.herokuapp.com/"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>

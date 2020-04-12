@@ -51,6 +51,18 @@ This will install all Composer dependencies, create the database structure and p
 
 You can access to the app by http://127.0.0.1:8000/ .
 
+##API
+
+Here are the routes to have the data from our API :
+
+* POST http://localhost:8000/api/register
+* POST http://localhost:8000/api/login
+* GET http://localhost:8000/api/cars
+* GET http://localhost:8000/api/cars/id (change id)
+* POST http://localhost:8000/api/cars
+* DELETE http://localhost:8000/api/cars/id (change id)
+* PUT http://localhost:8000/api/cars/id (change id)
+
 ## Deployment
 
 We used [Heroku](https://www.heroku.com/) to deploy our project.

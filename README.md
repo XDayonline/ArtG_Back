@@ -10,9 +10,9 @@
 <a href="https://artgback.herokuapp.com/"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-ArtG is an cross-platform application which serves to rent luxury cars developed in 2020.
+ArtG is a cross-platform application which serves to rent luxury cars developed in 2020.
 
-ArtG Back is a school project, in which we had to develop a back-office for our application ArtG, where the administrators can manage cars, rentals, customers data etc. We also developed the API to transfer the datas to the application. 
+ArtG Back is the back-office of our school project, in which we had to develop a administration area for our application ArtG, where the administrators can manage cars, rentals, customers data etc. We also developed the API to transfer the data to the application. 
 
 ## Getting Started
 

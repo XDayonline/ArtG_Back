@@ -1,7 +1,7 @@
 # ArtG Back
 
 
-<p align="center">
+<p justify="center">
 <a style="justify-content: center" href="https://artgback.herokuapp.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Circle-icons-car.svg/100px-Circle-icons-car.svg.png" title="ArtG" alt="ArtG"></a>
 </p>
 <p>
